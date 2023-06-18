@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        frame{
+            display:inline;
+            position: relative;
+        }
+        div.personality {
+            height: 350px;
+            width: 250px;
+            border:2px solid black;
+            border-radius: 20px;
+            background-color: rgba(10, 5, 31, 0.671);
+            margin: 50px 25%;
+            color:white;
+        
+        }
+        
+        /* span {
+             border: 1px solid black;
+            margin: 12px;
+            padding: 5px;
+        } */
+        div.imag {
+            position: relative;
+            top: -405px;
+            left: 225px; 
+        }
+        #image {
+            height: 350px;
+            width: 250px;
+            border:  solid black;
+            background-color: rgba(10, 5, 31, 0.671);
+            position: relative;
+            border-radius: 20px;  
+
+        }
+        button {
+            height: 40px;
+            width: 150px;
+            background-color: #fff;
+            border-radius: 15px;
+
+        }
+        .twenty-one {
+            background: #790909;
+            color: rgb(145, 169, 240);
+            border: 2px solid rgb(150, 176, 255);
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+            transition: color 400ms;
+        }
+
+        .twenty-one::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(26, 43, 94);
+            z-index: -1;
+            transition: transform 400ms ease-out;
+            transform: scaleX(0);
+            transform-origin: left;
+            border-radius: 15px;
+        }
+
+        .twenty-one:hover::before {
+        transform: scaleX(1);
+        }
+
+        .twenty-one:hover {
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body style="background-color: rgba(10, 5, 31, 0.671); text-align: center; overflow: hidden;">
+    <div><h1 style="font-size: 56px ; font-weight: 600; font-family: 'Encode Sans Semi Condensed', sans-serif;">Fetch Data of Star Wars Characters</h1>
+        <button class="twenty-one" id="btnClick">Fetch Now</button>
+    </div>
+    <div class="frame">
+        <div class="personality"><br><br>
+            <div class="name"> person name is <strong>:</strong>&nbsp;<span id="name"></span></div><br><br>
+            <div>height <strong>:</strong>&nbsp;<span id="height"></span></div><br><br>
+            <div>mass <strong>:</strong>&nbsp;<span id="mass"></span></div><br><br>
+            <div>hairColor <strong>:</strong>&nbsp;<span id="haircolor"></div></span><br>  <br>
+            <div>skinColor <strong>:</strong>&nbsp;<span id="skincolor"></div></span><br>
+        </div>
+        <div class="imag">
+            <img id="image">
+        </div>
+    </div>
+    
+    <script>
+       
+
+        let btn=document.getElementById('btnClick')
+        let image=document.getElementById('image')
+        
+        var randomNumber = Math.ceil(Math.random()*88)
+        console.log(randomNumber);
+        btn.addEventListener('click', function(){
+            var randomNumber = Math.ceil(Math.random()*88)
+            console.log(randomNumber);
+            fetch(`https://akabab.github.io/starwars-api/api/id/${randomNumber}.json`)
+            .then(response => response.json())
+            .then(data =>{
+                console.log(data);
+                const attr = document.createAttribute("src")
+                attr.value=data['image'];
+                // data.array.forEach(user => {
+                //     const auther= `${user.name}`;
+                    document.getElementById ('name').innerHTML=data['name'];
+                    document.getElementById ('height').innerHTML=data['height'];
+                    document.getElementById ('mass').innerHTML=data['mass'];
+                    document.getElementById ('haircolor').innerHTML=data['hair_color'];
+                    document.getElementById ('skincolor').innerHTML=data['skin_color'];
+                    image.setAttributeNode(attr);
+                });
+            });
+
+                // .then(data =>{
+                //     console.log("data: name")
+                // })
+
+
+
+    </script>
+</body>
+</html>
