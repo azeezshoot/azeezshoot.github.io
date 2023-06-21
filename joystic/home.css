@@ -1,0 +1,204 @@
+ body.backgd {
+    background-image: linear-gradient(to bottom right, #423d3de3 12%, hsla(0, 4%, 9%, 0.507));
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-position: right;
+    overflow-x: hidden;
+}
+div.box {
+    width:500px;
+    height: 500px;
+    margin: 50px -135px;
+    /* border: 2px solid black; */
+    color: bisque;
+    font-family: Arial;
+    display: inline-block;
+    backdrop-filter: brightness(50%);
+    background-image: linear-gradient(to bottom right, #00ff74bf 12%, hsl(141deg 100% 18%));
+    /* background-size: cover;
+    background-position: center; */
+    border-radius: 57% 21% 57% 43% / 68% 15% 84% 10%;
+    box-shadow: 1px 1px 1px rgb(19, 0, 0);
+}
+.divbox2 {
+    width:400px;
+    height: 400px;
+    /* margin: 50px -135px; */
+    /* border: 2px solid black; */
+    color: bisque;
+    font-family: Arial;
+    display: inline-flex;
+    backdrop-filter: brightness(50%);
+    background-image: linear-gradient(to bottom right, #00ff74bf 12%, hsl(141deg 100% 18%));
+    background-size: cover;
+    position: relative;
+    top: 150px;
+    left: 1000px;
+    right: 300px;
+    border-radius: 117% 98% 52% 127% / 64% 101% 116% 154%;
+    box-shadow: 1px 1px 1px rgb(1, 0, 0);
+}
+.button1 {
+    height: 20px;
+    width: 125px;
+    float: right;
+    margin: 30px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+.button2 {
+    height: 20px;
+    width: 25px;
+    background-color: transparent;
+    float: right;
+    margin: 30px;
+}
+.button1:hover {
+    background-color: green;
+}
+
+.ballshade {
+    height: 150px;
+    display: inline-block;
+    width: 150px;
+    margin: 40px 180px 5px 5px;
+    left: 50%; top: 50%;
+    opacity: 60%;
+
+
+}
+.circle {
+    height: 120px;
+    width: 125px;
+    margin: -30px -40px;
+    float: left;
+    backdrop-filter: brightness(50%);
+    background-image: linear-gradient(to bottom right, #00ff74bf 12%, hsl(141deg 100% 18%));
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px rgb(1, 0, 0);
+
+
+}
+.ballshade2 {
+    height: 42px;
+    width: 42px;
+    float: right;
+    margin: 50px 10px 5px 5px;
+    left: 50%; top: 50%;
+    opacity: 90%;
+}
+
+.bgpnb {
+    height: 2200px;
+    width: 900px;
+    background-image: url('imag/bg.png');
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    margin-top: 6px;
+    margin-left: 450px;
+    background-position: top;
+    float: right;
+    filter: blur(4px);
+    opacity: 55%;
+    position: fixed;
+
+}
+.textbox {
+    height: 200px;
+    width: 700px;
+    color: white;
+    font-size: 45px;
+    font-family: Arial;
+    position: relative;
+    top: 300px;
+    left: 500px;
+    right: 200px;
+}
+.textbox2 {
+    height: 50px;
+    width: 550px;
+    font-size: 25px;
+    position: relative;
+    top: -72px;
+    left: 600px ;
+    font-family: Arial;
+     color: white;
+}
+.textbox3 {
+    height: 50px;
+    width: 300px;
+    position: relative;
+    top: 800px;
+     color: white;
+     border: 2px solid red;
+}
+.image-holder
+{
+    width: 1052px;
+    background-color: red;
+    height: 252px;
+    clear: both;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    top: 700px;
+    right: 400px;
+    left: 295px;
+    float: right;
+}
+
+.slider-image1
+{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50px 1px 1px 50px;
+}
+.slider-image2
+{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.slider-image3
+{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 1px 50px 50px 1px;
+}
+.xboxcon {
+    background-image: url("imag/powefulxbox.png");
+    height: 300px;
+    width: 300px;
+    float: left;
+    position: relative;
+    top: -150px;
+    border-radius: 50px 50px 50px 50px;
+    display: block;
+}
+.image4 {
+    background-image: url("imag/xbox4.png");
+    height: 1200px;
+    width: 1347px;
+    margin-top:-20px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -220px;
+    display: block;
+}
+.box2 {
+    height: 260px;
+    width: 400px;
+    position: relative;
+    top: 400px;
+    margin: -10px;
+    border-top: 300px solid rgba(0, 0, 0, 0.9);
+    border-bottom: 410px solid rgba(0, 0, 0, 0.9);
+    border-left: 650px solid rgba(0, 0, 0, 0.9);
+    border-right: 299px solid rgba(0, 0, 0, 0.9);
+}
