@@ -1,1 +1,2 @@
-[azeezshoot.github.io](https://azeezshoot.github.io/starwars/)
+#StarWars random Charecter Details
+[azeezshoot.github.io/starwars/](https://azeezshoot.github.io/starwars/)
