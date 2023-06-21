@@ -1,1 +1,1 @@
-[# azeezshoot.github.io](azeezshoot.github.io/starwars)
+[azeezshoot.github.io](azeezshoot.github.io/starwars)
