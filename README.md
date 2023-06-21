@@ -1,1 +1,1 @@
-[azeezshoot.github.io](http://www.azeezshoot.github.io/starwars)
+[azeezshoot.github.io](https://azeezshoot.github.io/starwars/)
