@@ -96,7 +96,7 @@ div.box {
 .bgpnb {
     height: 2200px;
     width: 900px;
-    background-image: url('imag/bg.png');
+    background-image: url('https://res.cloudinary.com/dclhrz7tq/image/upload/v1689278248/imag/bg_mzbzs3.png');
     background-size: 500px 500px;
     background-repeat: no-repeat;
     margin-top: 6px;
@@ -172,7 +172,7 @@ div.box {
     border-radius: 1px 50px 50px 1px;
 }
 .xboxcon {
-    background-image: url("imag/powefulxbox.png");
+    background-image: url("https://res.cloudinary.com/dclhrz7tq/image/upload/v1689278249/imag/powefulxbox_uofqvy.png");
     height: 300px;
     width: 300px;
     float: left;
@@ -182,7 +182,7 @@ div.box {
     display: block;
 }
 .image4 {
-    background-image: url("imag/xbox4.png");
+    background-image: url("https://res.cloudinary.com/dclhrz7tq/image/upload/v1689278249/imag/xbox4_dgxflc.png");
     height: 1200px;
     width: 1347px;
     margin-top:-20px;
@@ -197,8 +197,78 @@ div.box {
     position: relative;
     top: 400px;
     margin: -10px;
-    border-top: 300px solid rgba(0, 0, 0, 0.9);
+    border-top: 350px solid rgba(0, 0, 0, 0.9);
     border-bottom: 410px solid rgba(0, 0, 0, 0.9);
     border-left: 650px solid rgba(0, 0, 0, 0.9);
     border-right: 299px solid rgba(0, 0, 0, 0.9);
+}
+footer{
+    position: absolute;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
