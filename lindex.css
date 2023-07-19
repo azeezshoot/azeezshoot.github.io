@@ -1,29 +1,97 @@
-body {
-    overflow-x: hidden;
-    margin: 100px;
-    /* border: 2px solid red; */
-    background-color: #081c29;
-    /* background-color: #0f2c43; */
-    height: 3000px;
-
-    /* text-align: center; */
-    /* color: antiquewhite; */
-    padding-top: 5%;
-}
-h1{
-    font-size: 62px;
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(10,44,67,1) 29%, rgba(80,22,22,1) 55%, rgba(8,28,41,1) 84%); 
     font-family: Arial, Helvetica, sans-serif;
-    color:  white;   
-    margin:auto;
-    /* color: #01acf3; */
 
 }
-p.wd {
+.navbar{
+    color: white;
+    margin: 30px;
+    display: flex;
+}
+.myname{
+    float: left;
+    display: flex;
+}
+.hover-reveal {
+    display: none;
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 25px;
+
+}
+.myname h1:hover + .hover-reveal{
+    display: inline;
+    color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.nav {
+    /* display: inline-block; */
+    text-align: end;
+    float: left;
+    margin: 30px;
+    width: 100%;
+    
+}
+.nav a {
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    padding:30px;
+    
+    border-radius: 120px;
+}
+.nav a:hover{
     color: #01acf3;
-    margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    transition:.4s ease;
+    background-color: black;
+    border-radius: 120px;
+}
+.bod {
+    overflow-x: hidden;
+    background-color: transparent;
+    height: 1700px;
+    margin-left: 100px;
+    margin-right: 60px;
+}
+.bod-port {
+    display: flex;
+    width: 100%;
+}
+.bod-port img{
+    position: absolute;
+    top: 80px;
+    height: 450px;
+    margin-left: 150px;
+    opacity: 80%;
+    
+}
 
+.image {
+    float: left;
+
+}
+.name{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  white;
+    margin: 0;
+}
+.name h1{
+    margin-bottom: 0px;
+}
+.wd {
+    color: #01acf3;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 37px;
+    margin-top: 20px;
+}
+.summary {
+    font-size: medium;
+    line-height: 1.5;
+    font-size: 23px;
 }
 .projects {
     /* padding: 50px; */
@@ -34,7 +102,7 @@ p.wd {
 }
 p.Myp{
     padding: 10px;
-    color: #01acf3;
+    color: white;
 
     font-size: 30px;
 }
@@ -48,4 +116,11 @@ p.Myp{
     padding: 10px;
     color: #01acf3;
     border-radius: 20%;
+}
+.website:hover {
+    color: #01acf3;
+    transition:.4s ease;
+    background-color: black;
+    border-radius: 120px;
+    box-shadow: 15px solid white;
 }
