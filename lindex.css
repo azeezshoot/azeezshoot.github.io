@@ -14,18 +14,18 @@ body{
     color: #fff;
     float: left;
     display: flex;
-    transition: transform .4s ease-out; 
+    /* transition: transform .4s ease-out;  */
 
 }
 .myname h1{
-    transition: transform .4s ease-out;
+    /* transition: transform .4s ease-out; */
 }
 .hover-reveal {
     display: none;
     /* font-size: 27px;
     font-weight: bold; */
     /* margin-top: 25px; */
-    clip-path: inset(-1rem 100% 0 0);
+    /* clip-path: inset(-1rem 100% 0 0); */
     transition: .5s clip-path ease-in-out !important;
     
 
