@@ -1,23 +1,24 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Azeez I Creative
+        developer</title>
     <link rel="stylesheet" href="lindex.css">
 </head>
 <body >
     <div class="navbar">
         <a class="myname" href="/">
             <h1>Azeez.</h1>
-            <span class="hover-reveal">Ahmed</span>
+            <span class="hover-reveal"><h1>Ahmed</h1></span>
         </a>
         <div class="nav">
-            <a href="#">Home</a>
-            <a href="#aboutme">About Me</a>
-            <a href="#services">Services</a>
-            <a href="#contactus">Contact Us</a>
-                
+            <a href="/">Home</a>
+            <a href="/aboutme">About Me</a>
+            <a href="/services">Services</a>
+            <a href="/contactus">Contact Us</a>
+
         </div>
     </div>
     <div class="bod">
@@ -26,7 +27,6 @@
                 <h1>Hi, I'm Azeez</h1>
                 <p class="wd">Web Developer</p>
                 <p class="summary">Creative web developer with a track <br> record of developing complex web-based <br>applications using best software practices.</p>
-
             </div>
             <div class="image">
                 <img src="images/image1.png" alt="image">
@@ -40,5 +40,26 @@
             </div>
         </div>
     </div>
+    <!-- <script>
+            const swiftUpElements = document.querySelectorAll('.summary');
+
+            swiftUpElements.forEach(elem => {
+
+            const words = elem.textContent.split(' ');
+            elem.innerHTML = '';
+
+            words.forEach((el, index) => {
+                words[index] = `<span><i>${words[index]}</i></span>`;
+            });
+
+            elem.innerHTML = words.join(' ');
+
+            const children = document.querySelectorAll('span > i');
+            children.forEach((node, index) => {
+                node.style.animationDelay = `${index * .3}s`;
+            });
+
+        }); 
+    </script> -->
 </body>
 </html>
