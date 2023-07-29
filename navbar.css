@@ -1,0 +1,58 @@
+.navbar{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 20px;
+    display: flex;
+}
+.myname{
+    text-decoration: none;
+    color: #fff;
+    float: left;
+    display: flex;
+    /* transition: transform .4s ease-out;  */
+
+}
+/* .myname h1{
+    transition: transform .4s ease-out;
+} */
+.hover-reveal {
+    display: none;
+    /* font-size: 27px;
+    font-weight: bold; */
+    /* margin-top: 25px; */
+    /* clip-path: inset(-1rem 100% 0 0); */
+    /* transition: .5s clip-path ease-in-out !important; */
+    
+
+}
+.myname h1:hover + .hover-reveal{
+    display: inline;
+    color: white;
+    /* clip-path: inset(-1rem 100% 0 0); */
+    /* margin-left: .2em */
+
+}
+.nav {
+    /* display: inline-block; */
+    text-align: end;
+    float: left;
+    margin: 30px;
+    width: 100%;
+    
+}
+.nav a {
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    padding:30px;
+    
+    border-radius: 120px;
+}
+.nav a:hover{
+    color: #01acf3;
+    font-size: 16px;
+    transition:.4s ease;
+    background-color: black;
+    border-radius: 120px;
+}

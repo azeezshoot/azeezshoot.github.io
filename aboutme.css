@@ -1,0 +1,7 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(10,44,67,1) 29%, rgba(80,22,22,1) 55%, rgba(8,28,41,1) 84%); 
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+}
