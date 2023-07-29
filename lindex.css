@@ -64,7 +64,6 @@ body{
 .bod {
     overflow-x: hidden;
     background-color: transparent;
-    height: 1700px;
     margin-left: 100px;
     margin-right: 60px;
 
@@ -138,6 +137,40 @@ p.Myp{
     border-radius: 120px;
     box-shadow: 15px solid white;
 }
+
+
+
+
+/* Add your existing styles here */
+
+.project-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .project-section h2 {
+    font-size: 24px;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: nowrap; /* To prevent wrapping of projects to a new line */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Add some space between project images */
+    margin-top: 20px;
+  }
+  
+  .project-image {
+    width: 300px; /* Adjust the width of each project image */
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Optional: Add a border around the images */
+    border-radius: 5px; /* Optional: Add border radius to images */
+  }
+  
 
 
 
