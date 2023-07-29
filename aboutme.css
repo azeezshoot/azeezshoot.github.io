@@ -2,6 +2,78 @@ body{
     background: rgb(2,0,36);
     background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(10,44,67,1) 29%, rgba(80,22,22,1) 55%, rgba(8,28,41,1) 84%); 
     
+    line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 
 }
+.bod{
+    width:100%;
+    height: 1000px;
+    
+}
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color:rgba(24, 24, 32, 0.452);
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .about-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    align-items: end;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  

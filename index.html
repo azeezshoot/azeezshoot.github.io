@@ -6,19 +6,21 @@
     <title>Portfolio Azeez I Creative
         developer</title>
     <link rel="stylesheet" href="lindex.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script>
-        $(function(){
-        $("#navbar").load("nav.html");
-        });
-    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body >
-    <iframe src="navbar.html" frameborder="0" scrolling="no" width="100%" height="100px"></iframe>
+    <script>
+        $(document).ready(function() {
+          // Load the navbar.html content into the <nav> element on each page
+          $('nav').load('navbar.html');
+        });
+      </script>
+    <!-- <iframe src="navbar.html" frameborder="0" scrolling="no" width="100%" height="100px"></iframe> -->
 
-    <div id="navbar">
+    <nav id="navbar">
         <!-- navbar -->
-    </div>
+    </nav>
     <div class="bod">
         <div class="bod-port">
             <div class="name">

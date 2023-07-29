@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script>
-        $(function(){
-            $("#nav-placeholder").load('nav.html');
-        });
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Your Name</title>
+  <link rel="stylesheet" href="aboutme.css">
+
 </head>
 <body>
-    <iframe src="navbar.html" frameborder="0" scrolling="no" width="100%" height="50"></iframe>
+    <div class="bod">
+        <header>
+            <nav>
+            <!-- Include navigation links to other pages in your portfolio -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
 
-    <div id="nav-placeholder">
-
+        <main>
+            <section class="about-section">
+            <div class="container">
+                <h1>About Me</h1>
+                <img src="path_to_your_profile_picture.jpg" alt="Your Name">
+                <p>
+                Hello! My name is Your Name, and I'm a passionate web developer/designer.
+                Use this space to introduce yourself, talk about your interests, background,
+                and the skills you possess.
+                </p>
+                <p>
+                You can also mention your professional journey, any significant achievements,
+                and your vision as a web developer/designer.
+                </p>
+            </div>
+            </section>
+        </main>
     </div>
+  <footer>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
 </body>
 </html>
