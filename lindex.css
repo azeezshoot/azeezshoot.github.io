@@ -112,9 +112,10 @@ body{
     /* font-size: 30px; */
     margin-top: 10%;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    
 }
 p.Myp{
+    margin: 50px;
     padding: 10px;
     color: white;
     font-size: 30px;
@@ -123,7 +124,7 @@ p.Myp{
 .website {
     text-decoration: none;
     font-size: 20px;
-    border:2px solid #01acf3;
+    text-align: start;
     margin-right: 10%;
     margin-left: 10%;
     padding: 10px;
@@ -141,36 +142,6 @@ p.Myp{
 
 
 
-/* Add your existing styles here */
-
-.project-section {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .project-section h2 {
-    font-size: 24px;
-  }
-  
-  .project-container {
-    display: flex;
-    flex-wrap: nowrap; /* To prevent wrapping of projects to a new line */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    gap: 20px; /* Add some space between project images */
-    margin-top: 20px;
-  }
-  
-  .project-image {
-    width: 300px; /* Adjust the width of each project image */
-  }
-  
-  .project-image img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ddd; /* Optional: Add a border around the images */
-    border-radius: 5px; /* Optional: Add border radius to images */
-  }
-  
 
 
 
