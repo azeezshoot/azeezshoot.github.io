@@ -1,39 +1,53 @@
+
 .navbar{
     
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    margin: 20px;
+    margin: 20px 0px;
     display: flex;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(20, 19, 19, 0.3);
 }
-.myname{
-    text-decoration: none;
-    color: #fff;
-    float: left;
-    display: flex;
-    /* transition: transform .4s ease-out;  */
 
-}
-/* .myname h1{
-    transition: transform .4s ease-out;
-} */
-.hover-reveal {
-    display: none;
-    /* font-size: 27px;
-    font-weight: bold; */
-    /* margin-top: 25px; */
-    /* clip-path: inset(-1rem 100% 0 0); */
-    /* transition: .5s clip-path ease-in-out !important; */
-    
 
-}
-.myname h1:hover + .hover-reveal{
-    display: inline;
-    color: white;
-    /* clip-path: inset(-1rem 100% 0 0); */
-    /* margin-left: .2em */
+/* my name hover with some animations */
 
+.name-container a{
+   position: relative; 
+   display:inline-flex;
+   text-decoration: none;
 }
+.Azeez {
+    color:white;
+    font-size: 48px;
+ 
+ }
+ 
+ .Ahmed {
+   font-size: 48px;
+   color: #fff;
+   -webkit-background-clip: text;
+   background-clip: text;
+  
+   -webkit-clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+   transition: clip-path 1s .1s ease-out;
+ }
+ 
+ .name-container:hover .Ahmed {
+   /* Set clip-path for visible text */
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ }
+ 
+
+
+
+
+
+
+
+
+
 .nav {
     /* display: inline-block; */
     text-align: end;
