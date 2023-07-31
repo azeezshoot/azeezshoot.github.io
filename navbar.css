@@ -15,15 +15,19 @@
    position: relative; 
    display:inline-flex;
    text-decoration: none;
+   text-transform: uppercase;
+   align-items: center;
+   margin: 30px;
 }
 .Azeez {
     color:white;
-    font-size: 48px;
- 
- }
- 
- .Ahmed {
-   font-size: 48px;
+    font-size: 16px;
+    
+}
+
+.Ahmed {
+    text-transform: uppercase;
+    font-size: 16px;
    color: #fff;
    -webkit-background-clip: text;
    background-clip: text;
@@ -52,7 +56,7 @@
     /* display: inline-block; */
     text-align: end;
     float: left;
-    margin: 30px;
+    margin: 35px;
     width: 100%;
     
 }
