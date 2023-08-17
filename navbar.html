@@ -5,24 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu").hide();
+            $(".my-port").hide();
+            $("#menuIcon").hover({})
+            $(".menu-icon").click(()=>{
+                // $("#menuIcon").toggle("cross")
+               if($(".bod").is(":hidden")){
+                    $(".bod").show()
+               }else{
+                $(".bod").hide()}
+
+                if($("#my-port").is(":hidden")){
+                    $("#menu").show()
+                    $("#my-port").show()
+                    $("footer").hide()
+                    }else{
+                        $("#menu").hide()
+                        $("#my-port").hide()
+                        $("footer").show()}
+
+            })
+
+        })
+    </script>
 </head>
 <body>
 
     <div class="navbar">
         <div class="name-container">
-        <a class="myname" href="/">
-            <h1 class="Azeez">Azeez.</h1>
-            <h1 class="Ahmed">Ahmed</h1>
-        </a>
-    </div>
-        <div class="nav">
-            <a href="/">Home</a>
-            <a href="/aboutme.html">About Me</a>
-            <a href="/services.html">Portfolio</a>
-            <a href="/contactus.html">Contact Us</a>
-
-            
+            <a class="myname" href="/">
+                <h1 class="Azeez">Azeez.</h1>
+                <h1 class="Ahmed">Ahmed</h1>
+            </a>
+        </div>
+        <!-- <div class="menu nav" id="menu">
+                <a href="/">Home</a>
+                <a href="/aboutme.html">About Me</a>
+                <a href="/services.html">Portfolio</a>
+                <a href="/contactus.html">Contact Us</a>
+        </div> -->
+        <div class="navb">
+            <div class="menu-icon" id="menuIcon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
         </div>
     </div>
+    <div class="my-port" id="my-port">
+        <h1><a href="/">Home</a></h1>
+        <h1><a href="/aboutme.html">About Me</a></h1>
+        <h1><a href="/services.html">Portfolio</a></h1>
+        <h1><a href="/contactus.html">Contact Us</a></h1>
+
+
+                
+                
+                
+                
+    </div>
+    <script>
+        const menuIcon = document.getElementById("menuIcon");
+        // const menu=document.getElementById("menu");
+        menuIcon.addEventListener("mouseover", () => {
+          menuIcon.classList.add("cross");
+        });
+    
+        menuIcon.addEventListener("mouseout", () => {
+          menuIcon.classList.remove("cross");
+        });
+
+        menuIcon.addEventListener("click", () => {
+        menuIcon.classList.toggle("cross"); // To toggle the cross animation
+        // menu.classList.toggle("show"); // To toggle the menu visibility
+        });
+      </script>
 </body>
 </html>

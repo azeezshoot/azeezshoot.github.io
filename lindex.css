@@ -7,8 +7,6 @@ body{
 }
 .navbar{
     color: white;
-    margin: 20px;
-    display: flex;
 }
 .myname{
     text-decoration: none;
