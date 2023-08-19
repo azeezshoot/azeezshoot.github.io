@@ -5,7 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="contactus.css">
-  <script href="contactus.js"></script>
+  <script href="contactus.js">
+    const contactForm = document.getElementById('contact-form');
+
+      contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const formData = new FormData(contactForm);
+    
+      //email address
+      const emailTo = 'abdulazeez.md6789@gmail.com';
+      
+      const subject = 'New contact form submission';
+      let body = '';
+      formData.forEach((value, key) => {
+        body += `${key}: ${value}\n`;
+      });
+    
+      window.location.href = `mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+    </script>
 </head>
 <body>
   <header>
