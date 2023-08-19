@@ -10,6 +10,7 @@
         $(document).ready(function(){
             $("#menu").hide();
             $(".my-port").hide();
+            $("footer").show();
             $("#menuIcon").hover({})
             $(".menu-icon").click(()=>{
                 // $("#menuIcon").toggle("cross")
@@ -21,11 +22,15 @@
                 if($("#my-port").is(":hidden")){
                     $("#menu").show()
                     $("#my-port").show()
-                    $("footer").hide()
                     }else{
                         $("#menu").hide()
                         $("#my-port").hide()
-                        $("footer").show()}
+                        }
+                if($("footer").is(":hidden")){
+                    $("footer").show()
+                    }else {
+                        $("footer").hide()
+                }
 
             })
 
@@ -47,6 +52,7 @@
                 <a href="/services.html">Portfolio</a>
                 <a href="/contactus.html">Contact Us</a>
         </div> -->
+
         <div class="navb">
             <div class="menu-icon" id="menuIcon">
                 <span class="line"></span>
@@ -59,14 +65,12 @@
         <h1><a href="/">Home</a></h1>
         <h1><a href="/aboutme.html">About Me</a></h1>
         <h1><a href="/services.html">Portfolio</a></h1>
-        <h1><a href="/contactus.html">Contact Us</a></h1>
-
-
-                
-                
-                
-                
+        <h1><a href="/contactus.html">Contact Us</a></h1>      
     </div>
+
+
+
+
     <script>
         const menuIcon = document.getElementById("menuIcon");
         // const menu=document.getElementById("menu");

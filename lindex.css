@@ -3,62 +3,15 @@ body{
     background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(10,44,67,1) 29%, rgba(80,22,22,1) 55%, rgba(8,28,41,1) 84%); 
     
     font-family: Arial, Helvetica, sans-serif;
+    
 
 }
-.navbar{
-    color: white;
-}
-.myname{
-    text-decoration: none;
-    color: #fff;
-    float: left;
-    display: flex;
-    /* transition: transform .4s ease-out;  */
-
-}
-/* .myname h1{
-    transition: transform .4s ease-out;
-} */
-.hover-reveal {
+body::-webkit-scrollbar{
     display: none;
-    /* font-size: 27px;
-    font-weight: bold; */
-    /* margin-top: 25px; */
-    /* clip-path: inset(-1rem 100% 0 0); */
-    /* transition: .5s clip-path ease-in-out !important; */
-    
+}
 
-}
-.myname h1:hover + .hover-reveal{
-    display: inline;
-    color: white;
-    /* clip-path: inset(-1rem 100% 0 0); */
-    /* margin-left: .2em */
 
-}
-.nav {
-    /* display: inline-block; */
-    text-align: end;
-    float: left;
-    margin: 30px;
-    width: 100%;
-    
-}
-.nav a {
-    text-decoration: none;
-    color:white;
-    font-size: 15px;
-    padding:30px;
-    
-    border-radius: 120px;
-}
-.nav a:hover{
-    color: #01acf3;
-    font-size: 16px;
-    transition:.4s ease;
-    background-color: black;
-    border-radius: 120px;
-}
+
 .bod {
     overflow-x: hidden;
     background-color: transparent;
@@ -73,7 +26,7 @@ body{
 }
 .bod-port img{
     /* position: absolute;
-    top: 100px; */
+    top: 100px; */ 
     height: 450px;
     margin-left: 60%;
     opacity: 80%;
@@ -85,14 +38,11 @@ body{
     align-items: right;
 
 }
-.name{
-    font-size: 32px;
+.name h1{
+    font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     color:  white;
     margin-top: 50px;
-}
-.name h1{
-    margin-bottom: 0px;
 }
 .wd {
     color: #01acf3;
@@ -101,13 +51,12 @@ body{
     margin-top: 20px;
 }
 .summary {
+    color: #fff;
     font-size: medium;
     line-height: 1.5;
     font-size: 23px;
 }
 .projects {
-    /* padding: 50px; */
-    /* font-size: 30px; */
     margin-top: 10%;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -137,11 +86,6 @@ p.Myp{
 
 
 
-
-
-
-
-/* Add your existing styles here */
 
 .skill-section {
     padding: 40px;

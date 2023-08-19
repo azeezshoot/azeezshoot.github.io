@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+      /* body {
+        display: flex;
+        background-color: rgb(46, 45, 45);
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      } */
+      body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.circle-menu {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.circle-item {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.circle-menu:hover .circle-item {
+  opacity: 1;
+}
+
+#circle1 { top: 0; left: 80px; }
+#circle2 { top: 35px; left: 120px; }
+#circle3 { top: 120px; left: 120px; }
+#circle4 { top: 200px; left: 80px; }
+#circle5 { top: 235px; left: 0; }
+#circle6 { top: 120px; left: -40px; }
+#circle7 { top: 35px; left: -40px; }
+#circle8 { top: -40px; left: 0; }
+#circle9 { top: -40px; left: 80px; }
+
+    </style>
+</head>
+<body>
+  <!-- <div class="menu-icon" id="menuIcon">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div> -->
+<div class="menu-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" class="icons-style">
+    <title>Menu</title>
+    <circle cx="12" cy="12" r="3" stroke="white" opacity="1" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></circle>
+    <circle cx="24" cy="12" r="3" stroke="white" opacity="1" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></circle>
+    <circle cx="36" cy="12" r="3" stroke="white" opacity="1" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></circle>
+    <circle cx="36" cy="24" r="3" stroke="white" opacity="1" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></circle>
+    <circle cx="36" cy="36" r="3" stroke="white" opacity="1" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></circle>
+    <circle cx="24" cy="36" r="3" stroke="white" opacity="1" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></circle>	
+    <circle cx="12" cy="36" r="3" stroke="white" opacity="1" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></circle>
+    <circle cx="12" cy="24" r="3" stroke="white" opacity="1" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></circle>
+    <rect x="21" y="21" width="6px" stroke="white" height="6px" rx="3" ry="3" opacity="0.75" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></rect>
+    <rect x="21" y="21" width="6px" stroke="white" height="6px" rx="3" ry="3" opacity="0.75" transform-origin="0px 0px" style="transform: none; transform-origin: 0px 0px;"></rect>
+  </svg>
+</div>
+
+
+
+
+
+<div class="circle-menu">
+  <div class="circle-item" id="circle1"></div>
+  <div class="circle-item" id="circle2"></div>
+  <div class="circle-item" id="circle3"></div>
+  <div class="circle-item" id="circle4"></div>
+  <div class="circle-item" id="circle5"></div>
+  <div class="circle-item" id="circle6"></div>
+  <div class="circle-item" id="circle7"></div>
+  <div class="circle-item" id="circle8"></div>
+  <div class="circle-item" id="circle9"></div>
+</div>
+
+<script src="script.js"></script>
+
+  <!-- <script>
+    const menuIcon = document.getElementById("menuIcon");
+
+    menuIcon.addEventListener("mouseover", () => {
+      menuIcon.classList.add("cross");
+    });
+
+    menuIcon.addEventListener("mouseout", () => {
+      menuIcon.classList.remove("cross");
+    });
+
+  </script> -->
+</body>
+</html>
