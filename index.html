@@ -14,7 +14,7 @@
         $(document).ready(function() {
           // Load the navbar.html content into the <nav> element on each page
           $('nav').load('navbar.html');
-          // $('footer').load('footer.html');
+          $('footer').load('footer.html');
         });
       </script>
 </head>
@@ -33,20 +33,57 @@
                 <img src="images/image1.png" alt="image">
             </div>
         </div>
-        
+        <button>
+          <a target="_blank" href="AzeezResume.pdf" style="text-decoration: none; color: white;">My Rezume</a>
+          
+        </button>
         
         <div class="projects">
-            <h1 class="Myp">My achievements</h1>
-            <ul>
-                <li><a href="https://azeezshoot.github.io/starwars/" class="website">starwars</a></li>
-                <li><a href="https://azeezshoot.github.io/joystic/" class="website">joystic</a></li>
-                <li class="small-body" >
-                    <h3 class="archive_title small-body" > starwars </h3>
-                    <a  href="https://azeezshoot.github.io/starwars/">
-                        ::before
-                        "View case"
-                    </a>
-            </ul>
+          
+          <section class="projects-section" id="PRO">
+            <div class="project" id="project1">
+              <img src="images/Joystic.png" alt="Project 1">
+              <div class="project-details">
+                Project 1 Details
+              </div>
+            </div>
+          
+            <div class="project" id="project2">
+              <img src="images/EOAS.png" alt="Project 2">
+              <div class="project-details">
+                Project 2 Details
+              </div>
+            </div>
+          
+            <div class="project" id="project3">
+              <img src="images/starwars.png" alt="Project 3">
+              <div class="project-details">
+                Project 3 Details
+              </div>
+            </div>
+          </section>
+          
+          <section class="projects-section">
+              <div class="project" id="project1">
+                <p>JOYSTIC</p>
+                <div class="project-details">
+                  
+                </div>
+              </div>
+            
+              <div class="project" id="project2">
+                <p>EOAS</p>
+                <div class="project-details">
+                  Examination Office Automation System is a comprehensive and efficient software solution designed to streamline and enhance the management of examination-related tasks within an educational institution.
+                </div>
+              </div>
+            
+              <div class="project" id="project3">
+                <p>STARWARS</p>
+                <div class="project-details">
+                </div>
+              </div>
+            </section>
         </div>
     
 
@@ -54,20 +91,21 @@
     <section class="skill-section">
         <div class="skills">
           <div class="frontend">
-            <h3>Frontend</h3>
+            <h3>professional Skills</h3>
             <ul class="frontend">
-              <li><i class="fab fa-html5"></i><h4> HTML</h4></li>
-              <li><i class="fab fa-css3-alt"></i><h4>CSS</h4></li>
-              <li><i class="fab fa-js"></i> <h4>JavaScript</h4></li>
-              <li><i class="fab fa-js-square"></i> <h4>jQuery</h4></li>
-              <li><i class="fab fa-react"></i><h4>React</h4></li>
+              <li><i class="fab fa-html5"></i></li>
+              <li><i class="fab fa-css3-alt"></i></li>
+              <li><i class="fab fa-js"></i></li>
+              <li><i class="fab fa-js-square"></i></li>
+              <li><i class="fab fa-js-square"></i></li>
+              <li><i class="fab fa-react"></i></li>
             </ul>
           </div>
           <div class="backend">
-            <h3>Backend</h3>
             <ul>
-                <li><i class="fab fa-python"></i> <h4>Python</h4></li>
-              <li><i class="fab fa-cuttlefish"></i><h4>C++</h4></li>
+                <li><i class="fab fa-python"></i> <h4></h4></li>
+              <li><i class="fab fa-cuttlefish"></i><h4></h4></li>
+              <li><i class="fa-brands fa-java" style="color: #ffffff;"></i></li>
             </ul>
           </div>
         </div>

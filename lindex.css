@@ -1,8 +1,7 @@
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(10,44,67,1) 29%, rgba(80,22,22,1) 55%, rgba(8,28,41,1) 84%); 
-    
-    font-family: Arial, Helvetica, sans-serif;
+  background: rgb(0,0,0);
+    background: linear-gradient(277deg, rgba(0,0,0,1) 0%, rgba(0,28,40,1) 47%, rgba(0,0,0,1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
     
 
 }
@@ -25,8 +24,9 @@ body::-webkit-scrollbar{
 
 }
 .bod-port img{
-    /* position: absolute;
-    top: 100px; */ 
+    position: absolute;
+    top: -30px;
+    left: 150px;
     height: 450px;
     margin-left: 60%;
     opacity: 80%;
@@ -48,13 +48,13 @@ body::-webkit-scrollbar{
     color: #01acf3;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 37px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .summary {
     color: #fff;
     font-size: medium;
     line-height: 1.5;
-    font-size: 23px;
+    font-size: 27px;
 }
 .projects {
     margin-top: 10%;
@@ -80,6 +80,49 @@ p.Myp{
     border-radius: 120px;
     box-shadow: 15px solid white;
 }
+
+
+
+
+/* my button */
+button {
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  background: #100720;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+button::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+button:active {
+  -webkit-transform: scale(0.9) rotate(3deg);
+      -ms-transform: scale(0.9) rotate(3deg);
+          transform: scale(0.9) rotate(3deg);
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 
 
 
@@ -119,7 +162,6 @@ p.Myp{
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
     
   }
   
@@ -128,7 +170,6 @@ p.Myp{
     margin: 20px;
     color: #fff;
     display: block;
-    border: white solid 1px;
     border-radius: 10%;
     padding: 20px;
     justify-content: center;
@@ -143,4 +184,72 @@ p.Myp{
   ul li i h4 {
     display: flex;
     justify-content: center;
+  }
+
+/* my projects in website */
+
+
+  .projects-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+  }
+  
+  .project {
+    width: 32%;
+    height:380px;
+    border: 1px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .project img {
+    width: 100%;
+    display: block;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: scale(1);
+  }
+  
+  .project:nth-child(2) {
+    margin-top: -230px; /* Adjust this value to position the middle project higher */
+  }
+  
+  .project:hover img {
+      
+    transform: scale(1.1);
+  }
+  
+  
+  
+  
+  #PRO{
+      font-family: 'Arial', sans-serif;
+      color:#fff;
+      font-size:40px;
+      line-height:60px;
+      text-transform: uppercase;
+      position: relative;
+      top: 250px;
+  }
+  p{
+      font-family: 'Arial', sans-serif; 
+      color:#fff;
+      font-size:40px;
+      line-height:90px;
+      text-shadow: 0 0 10px rgba(255,255,255,.5),
+      0 0 20px rgba(255,255,255,.5),
+  
+  }
+  .project-details{
+      font-family: 'Arial', sans-serif;
+      font-size: 22px;
   }

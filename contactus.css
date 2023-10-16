@@ -1,16 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
+    background: rgb(0,54,77);
+    background: linear-gradient(277deg, rgba(0,54,77,1) 0%, rgba(4,94,131,1) 21%, rgba(5,143,200,1) 36%, rgba(4,146,205,1) 52%, rgba(0,113,161,1) 70%, rgba(2,68,96,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    height: 660px;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: #333;
+    font-size: 30px;
     color: white;
     text-align: center;
     padding: 20px;
   }
-  
+    
   main {
     max-width: 600px;
     margin: 0 auto;
