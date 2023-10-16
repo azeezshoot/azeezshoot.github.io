@@ -152,9 +152,10 @@ button:active {
   
   .frontend h3,
   .backend h3 {
-
+    text-align: center;
     color: white;
     font-size: 30px;
+
   }
   
   ul {
@@ -228,6 +229,14 @@ button:active {
     transform: scale(1.1);
   }
   
+
+  .my_project_name{
+    font-size: 30px;
+    position: relative;
+    top: 60px;
+    left: auto;
+    text-align: center;
+  }
   
   
   
@@ -240,7 +249,7 @@ button:active {
       position: relative;
       top: 250px;
   }
-  p{
+  .project p{
       font-family: 'Arial', sans-serif; 
       color:#fff;
       font-size:40px;

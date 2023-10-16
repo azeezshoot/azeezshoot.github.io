@@ -42,3 +42,10 @@ body {
     position: absolute;
     right: 550px;
   }
+
+
+  .copy{
+    font-size: 15px;
+    margin:none;
+    padding: 0;
+    }
