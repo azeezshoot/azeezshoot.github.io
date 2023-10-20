@@ -35,6 +35,14 @@
             })
 
         })
+        $(document).scrollTop(function(){
+          var scrollPos = $(this).scrollTop();
+          if (scrollPos > 60) {
+            $('.navbar').addClass("sticky");
+            } else {
+              $('.navbar').removeClass("sticky");
+              }
+        })
     </script>
 </head>
 <body>
@@ -42,7 +50,7 @@
     <div class="navbar">
         <div class="name-container">
             <a class="myname" href="/">
-                <h1 class="Azeez">Azeez.</h1>
+                <h1 class="Azeez">Azeez&nbsp;</h1>
                 <h1 class="Ahmed">Ahmed</h1>
             </a>
         </div>
@@ -65,7 +73,7 @@
         <h1><a href="/">Home</a></h1>
         <h1><a href="/aboutme.html">About Me</a></h1>
         <h1><a href="/services.html">Portfolio</a></h1>
-        <h1><a href="/contactus.html">Contact Us</a></h1>      
+        <h1><a href="/contactus.html">Contact Us</a></h1>
     </div>
 
 

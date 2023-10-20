@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -16,6 +18,14 @@
           $('nav').load('navbar.html');
           $('footer').load('footer.html');
         });
+        $(document).scrollTop(function(){
+          var scrollPos = $(this).scrollTop();
+          if (scrollPos > 60) {
+            $('#navbar').addClass("sticky");
+            } else {
+              $('#navbar').removeClass("sticky");
+              }
+        })
       </script>
 </head>
 <body>
@@ -34,7 +44,7 @@
             </div>
         </div>
         <button>
-          <a target="_blank" href="AzeezResume.pdf" style="text-decoration: none; color: white;">My Rezume</a>
+          <a target="_blank" href="AzeezResume.pdf" style="text-decoration: none; color: white;">My Resume</a>
           
         </button>
         
@@ -63,7 +73,7 @@
             </div>
           </section>
           
-          <section class="projects-section">
+          <section class="projects-section"  id="project-description">
               <div class="project" id="project1">
                 <p>JOYSTIC</p>
                 <div class="project-details">
@@ -87,29 +97,54 @@
         </div>
     
 
-
-    <section class="skill-section">
-        <div class="skills">
-          <div class="frontend">
-            <h3>professional Skills</h3>
-            <ul class="frontend">
-              <li><i class="fab fa-html5"></i></li>
-              <li><i class="fab fa-css3-alt"></i></li>
-              <li><i class="fab fa-js"></i></li>
-              <li><i class="fab fa-js-square"></i></li>
-              <li><i class="fab fa-js-square"></i></li>
-              <li><i class="fab fa-react"></i></li>
+        <h1 class="skills">PROFFESIONAL SKILLS</h1>
+      <div class="icons skill skill-section">
+        <div class="tools" id="frontend">
+            <ul class="icon">
+                <li><i class="devicon-html5-plain colored"></i></li>
+                
+                <li><i class="devicon-css3-plain colored"></i></li>
+                
+                <li><i class="devicon-bootstrap-plain colored"></i></li>
+                
+                <li><i class="devicon-tailwindcss-plain colored"></i></li>
+                            
+                <li><i class="devicon-javascript-plain colored"></i></li>
+                
+                <li><i class="devicon-jquery-plain colored"></i></li>
+                
+                <li><i class="devicon-react-original colored"></i></li>
+                
+                <li><i class="devicon-django-plain colored"></i></li>
             </ul>
-          </div>
-          <div class="backend">
-            <ul>
-                <li><i class="fab fa-python"></i> <h4></h4></li>
-              <li><i class="fab fa-cuttlefish"></i><h4></h4></li>
-              <li><i class="fa-brands fa-java" style="color: #ffffff;"></i></li>
-            </ul>
-          </div>
         </div>
-      </section>
+        <div class="tools" id="backend">
+            <ul class="icon">
+               <li> <i class="devicon-c-plain colored"></i></li>
+                
+                <li><i class="devicon-cplusplus-plain colored"></i></li>
+                
+                <li><i class="devicon-java-plain colored"></i></li>
+                            
+                <li><i class="devicon-python-plain colored"></i></li>
+            </ul>
+        </div>
+        <div class="tools" id="tools">
+            <ul class="icon">
+                <li><i class="devicon-github-original colored"></i></li>
+                
+                <li><i class="devicon-git-plain colored"></i></li>
+                
+                <li><i class="devicon-vscode-plain colored"></i></li>
+                
+                <li><i class="devicon-dot-net-plain colored"></i></li>
+
+                <li><i class="devicon-linux-plain colored"></i></li>
+
+                <li><i class="devicon-raspberrypi-line colored"></i></li> 
+            </ul>
+        </div>
+    </div>
 
     </div>
 
