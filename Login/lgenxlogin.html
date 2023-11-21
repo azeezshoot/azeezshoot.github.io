@@ -1,0 +1,162 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .logo {
+            width: 200px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #3b5998;
+            color: white;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="lgenx-logo.png" alt="lgenx logo" class="logo">
+        <h1>Employee Login</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Login</button>
+            </div>
+            <div id="error" class="error"></div>
+        </form>
+    </div>
+    <script>
+        // Get the form elements
+        var form = document.getElementById("login-form");
+        var email = document.getElementById("email");
+        var password = document.getElementById("password");
+        var submit = document.getElementById("submit");
+        var error = document.getElementById("error");
+
+        // Define a function to validate the email and password
+        function validate(email, password) {
+            // Check if the email is valid
+            var emailRegex = /^[a-zA-Z0-9._-]+@lgenx.com$/;
+            if (!emailRegex.test(email)) {
+                return "Invalid email address. Please use your lgenx email.";
+            }
+
+            // Check if the password is valid
+            var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+            if (!passwordRegex.test(password)) {
+                return "Invalid password. Please use at least 8 characters, one uppercase letter, one lowercase letter and one number.";
+            }
+
+            // If no errors, return an empty string
+            return "";
+        }
+
+        // Define a function to handle the form submission
+        function handleSubmit(event) {
+            // Prevent the default behavior of the form
+            event.preventDefault();
+
+            // Get the email and password values
+            var emailValue = email.value;
+            var passwordValue = password.value;
+
+            // Validate the email and password
+            var errorMessage = validate(emailValue, passwordValue);
+
+            // If there is an error, display it and return
+            if (errorMessage) {
+                error.textContent = errorMessage;
+                return;
+            }
+
+            // If there is no error, clear the error message and proceed
+            error.textContent = "";
+
+            // Simulate a login request to the server
+            // For simplicity, assume that the server returns a success response
+            // In reality, the server should verify the email and password and return a token or a cookie
+            var response = {
+                status: "success",
+                message: "Login successful"
+            };
+
+            // If the response is successful, redirect the user to the home page
+            if (response.status === "success") {
+                // Store the email in the local storage to keep the user logged in
+                localStorage.setItem("email", emailValue);
+
+                // Redirect the user to the home page
+                window.location.href = "home.html";
+            }
+
+            // If the response is not successful, display the error message
+            else {
+                error.textContent = response.message;
+            }
+        }
+
+        // Add an event listener to the form submission
+        form.addEventListener("submit", handleSubmit);
+
+        // Check if the user is already logged in
+        function checkLogin() {
+            // Get the email from the local storage
+            var emailValue = localStorage.getItem("email");
+
+            // If the email exists, redirect the user to the home page
+            if (emailValue) {
+                window.location.href = "home.html";
+            }
+        }
+
+        // Call the checkLogin function when the page loads
+        window.onload = checkLogin;
+    </script>
+</body>
+</html>
+
